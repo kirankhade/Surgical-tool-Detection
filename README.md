@@ -1,2 +1,37 @@
-# Surgical-tool-Detection
-Surgical tool detection using CNN
+# Surgical Tool Detection using Convolutional Neural Networks
+
+The problem statement and dataset can be found at <http://camma.u-strasbg.fr/m2cai2016/index.php/program-challenge/>.
+
+## Environment Setup
+
+* Download and Install Miniconda 3 for Python 3 from <https://conda.io/miniconda.html>
+* Edit `env.bat` to point to installed location.
+* Run `env.bat`
+* Run  the following command to create environment named `tool_detection`.
+```
+conda create --name tool_detection --file tool_detection.yml
+```
+* Activate the environment
+```
+activate tool_detection
+```
+* Now you can run jupyter notebook by
+```python
+jupyter notebook
+```
+
+## Tensorflow GPU
+
+* To use GPU enabled learning you would need to install tensorflow gpu. Instructions can be found at <https://www.tensorflow.org/install/install_windows>.
+* The required installers can be found at \\10.80.0.220\Common_Share\Nitish\Software\CUDA 9.0.
+* After CUDA installation you need to extract cuDNN available in the same folder into the CUDA installation path.
+
+## Preprocessed Data
+
+* The Video data has been pre-processed and dumped into HDF5 files for easy access and maintainance.
+* Preprocessed data can be found at \\10.80.0.220\Common_Share\Nitish\tool_detection
+
+### Congratulations
+Now you are ready to train your deep neural networks.
+
+### References
